@@ -1,0 +1,8 @@
+# Railway build & start configuration for CafeParis (ASP.NET app)
+
+[build]
+builder = "NIXPACKS"
+buildCommand = "msbuild CafeParis.sln /p:Configuration=Release"
+
+[start]
+command = "dotnet CafeParis.dll"
